@@ -1,4 +1,3 @@
 # H-driver
 ATOM HDriver is a H-bridge motor driver accessory for M5Atom. It integrates the DRV8876 motor driver chip,which supports 9-24V/DC voltage input(The inline DC/DC circuit supplies power to the whole device,the ADC pin G33 is directly connected to the voltage divider circuit and can monitor the power input at any time) The current output is 1.5A, max 2A, It can be used for DC motor speed regulation and forward and reverse control. The driver integrates N-channel H-bridge, charge pump regulator, current detection and regulation, current proportional output and protection circuit (protection function integration: power supply under voltage lockout (UVLO), charge pump undervoltage (CPUV), output over voltage Current (OCP) and device over temperature (TSD), fault conditions are also indicated by the FAULT pin).
 
-![M5PPT-en (1920 × 2160, __)](https://github.com/Skyggebjerg/H-driver/assets/8426075/f637f6ae-2b5b-4ff3-8525-738c47d15e1c)
