@@ -18,10 +18,10 @@
 
 const int IN1_PIN = 19;
 const int IN2_PIN = 23;
-int freq          = 10000;
+int freq          = 20000;
 int ledChannel1   = 0;
 int ledChannel2   = 1;
-int resolution    = 10;
+int resolution    = 8;
 bool direction    = true;
 int VIN_PIN       = 33;
 int FAULT_PIN     = 22;
@@ -46,12 +46,12 @@ void loop() {
     if (M5.Btn.wasPressed()) {
         if (direction) {
             M5.dis.drawpix(0, 0x0000f0);
-            ledcWrite(ledChannel1, 1000);
+            ledcWrite(ledChannel1, 230);
             ledcWrite(ledChannel2, 0);
         } else {
             M5.dis.drawpix(0, 0xff00f0);
             ledcWrite(ledChannel1, 0);
-            ledcWrite(ledChannel2, 1000);
+            ledcWrite(ledChannel2, 255);
         }
         direction = !direction;
     }
